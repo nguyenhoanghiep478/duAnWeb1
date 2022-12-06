@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0;
+}
+
+header .navbar-nav li a:hover {
+  background-color: #007bff;
+}
+header .user {
+  margin-right: 30px;
+}
+header .user .login a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .login a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .login a i:hover {
+  background-color: #007bff;
+}
+header .user .settingAdmin a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .settingAdmin a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .settingAdmin a i:hover {
+  background-color: #007bff;
+}
+header .user .shopping a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .shopping a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .shopping a i:hover {
+  background-color: #007bff;
+}
+
+body {
+  background: #007bff;
+}
+
+.content {
+  background: #fff;
+  margin-top: 70px;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.content .kTra {
+  margin-top: 10px;
+  font-weight: 600;
+}/*# sourceMappingURL=loginDK.css.map */

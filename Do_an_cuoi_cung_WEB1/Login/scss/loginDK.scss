@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 0;
+}
+
+header {
+    .navbar-nav {
+
+        li {
+            a:hover {
+                background-color: #007bff;
+            }
+        }
+
+    }
+
+    .user {
+        margin-right: 30px;
+
+        .login {
+
+            // align-items: center;
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                i {
+                    padding: 10px;
+                    align-items: center;
+                    // display: block;
+                }
+
+                i:hover {
+                    background-color: #007bff;
+                }
+            }
+
+        }
+        .settingAdmin {
+            a {
+
+                text-decoration: none;
+                color: #fff;
+
+                i {
+                    padding: 10px;
+                    align-items: center;
+                }
+
+                i:hover {
+                    background-color: #007bff;
+                }
+            }
+        }
+
+        .shopping {
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                i {
+                    padding: 10px;
+                    align-items: center;
+                }
+
+                i:hover {
+                    background-color: #007bff;
+                }
+            }
+        }
+    }
+}
+body{
+    background: #007bff;
+}
+.content{
+    background: #fff;
+    margin-top: 70px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .kTra{
+        margin-top: 10px;
+        font-weight: 600;
+    }
+}

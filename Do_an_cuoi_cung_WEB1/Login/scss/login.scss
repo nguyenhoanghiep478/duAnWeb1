@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 0;
+}
+
+header {
+    .navbar-nav {
+
+        li {
+            a:hover {
+                background-color: #007bff;
+            }
+        }
+
+    }
+
+    .user {
+        margin-right: 30px;
+
+        .login {
+
+            // align-items: center;
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                i {
+                    padding: 10px;
+                    align-items: center;
+                    // display: block;
+                }
+
+                i:hover {
+                    background-color: #007bff;
+                }
+            }
+
+        }
+        .settingAdmin {
+            a {
+
+                text-decoration: none;
+                color: #fff;
+
+                i {
+                    padding: 10px;
+                    align-items: center;
+                }
+
+                i:hover {
+                    background-color: #007bff;
+                }
+            }
+        }
+
+        .shopping {
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                i {
+                    padding: 10px;
+                    align-items: center;
+                }
+
+                i:hover {
+                    background-color: #007bff;
+                }
+            }
+        }
+    }
+}
+body{
+    background: #009EFF;
+}
+.content{
+    .DangNhap{
+        // margin-top: 180px;
+        text-align: center;
+    }
+    input{
+        height: 40px;
+        margin-left: 50px;
+        width: 600px;
+    }
+    .DN{
+        padding-left: 200px;
+        padding-right: 100px;
+    }
+    .MK{
+        @extend .DN;
+    }
+    h3{
+        margin-top: 10px;
+        padding: 5px 10px;
+        // border: 2px solid #007bff;
+        // display: inline-block;
+    }
+    .DangKi{
+        margin-top: 40px;
+    }
+    .btnDangNhap{
+        margin-top: 20px;
+    }
+    .btnDNLogin{
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-top: 140px;
+    background-color: #fff  ;
+    opacity: 1;
+}

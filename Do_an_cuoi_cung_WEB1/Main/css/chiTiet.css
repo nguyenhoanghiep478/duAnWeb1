@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0;
+}
+
+header .navbar-nav li a:hover {
+  background-color: #007bff;
+}
+header .user {
+  margin-right: 30px;
+}
+header .user .login a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .login a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .login a i:hover {
+  background-color: #007bff;
+}
+header .user .shopping a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .shopping a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .shopping a i:hover {
+  background-color: #007bff;
+}
+
+.TTCT {
+  margin-top: 20px;
+}
+.TTCT h4 {
+  color: #007bff;
+}
+
+.content_SP {
+  margin-top: 50px;
+}
+.content_SP .right .row .col-2 p {
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #007bff;
+  color: #007bff;
+  font-weight: 600;
+}
+.content_SP .right h5 {
+  color: #007bff;
+}
+.content_SP .right .dollar {
+  color: #007bff;
+}
+.content_SP .right .truck {
+  color: green;
+}
+.content_SP .right .ring {
+  color: red;
+}
+.content_SP .right .Add ul li {
+  list-style: none;
+}
+.content_SP .right .Add button {
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+}
+.content_SP .right .Add p {
+  display: inline-block;
+  padding: 15px;
+}/*# sourceMappingURL=chiTiet.css.map */

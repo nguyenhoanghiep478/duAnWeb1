@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font AweSome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="#">SGU-phone</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./main.html">Trang chủ<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gioiThieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./lienHe.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user row">
+                    <div class="settingAdmin" id="AD" style="display: none;">
+                      <a href="../Admin/index.html">
+                        <i class="fa-solid fa-gear"></i>
+                      </a>
+                    </div>
+                    <div class="login">
+                        <a href="../Login/Login.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                    <div class="shopping">
+                        <a href="">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="wrap__tittle">
+            <div class="show__text" id="">
+                Thông báo sẽ xuất hiện ở đây
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="noiDung" class="content container" style="display: block;">
+            <div class="row searchSP ">
+                <div class="col-4 activities left">
+                  <div class="content-left">
+                    <div class="filter-box">
+                        <div class="filter-box-item filter-name">
+                            <div class="search-bar">
+                                <input id="search-input" type="text" placeholder="Tìm kiếm sản phẩm" autocomplete="off">
+                            </div>
+                            <div class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                        <div class="filter-box-item filter-brand">
+                            <div class="filter-text filter-brand-text">
+                                <h5>Theo Hãng</h5>
+                            </div>
+                            <div class="filter-group filter-brand-group">
+                                <div class="filter-group-item brand-item" value="Samsung">Samsung</div>
+                                <div class="filter-group-item brand-item" value="Xiaomi">Xiaomi</div>
+                                <div class="filter-group-item brand-item" value="Apple">Apple</div>
+                                <div class="filter-group-item brand-item" value="Realmi">Realmi</div>
+                                <div class="filter-group-item brand-item" value="Oppo">Oppo</div>
+                                <div class="filter-group-item brand-item" value="Nokia">Nokia</div>
+                            </div>
+                        </div>
+                        <div class="filter-box-item filter-price">
+                            <div class="filter-text filter-price-text">
+                                <h5>Theo Giá</h5>
+                            </div>
+                            <div class="filter-price-group">
+                                <div class="price-item price-item-min">
+                                    <input type="number" id="price-min-input" placeholder="Giá tối thiểu" autocomplete="off">
+                                </div>
+                                <div class="price-item price-item-max">
+                                    <input type="number" id="price-max-input" placeholder="Giá tối đa" autocomplete="off">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-box-item filter-ram">
+                            <div class="filter-text filter-ram-text">
+                                <h5>Theo Ram</h5>
+                            </div>
+                            <div class="filter-group filter-ram-group">
+                                <div class="filter-group-item ram-item" value="2">2GB</div>
+                                <div class="filter-group-item ram-item" value="3">3GB</div>
+                                <div class="filter-group-item ram-item" value="4">4GB</div>
+                                <div class="filter-group-item ram-item" value="6">6GB</div>
+                                <div class="filter-group-item ram-item" value="8">8GB</div>
+                                <div class="filter-group-item ram-item" value="12">12GB</div>
+                            </div>
+                        </div>
+                        <div class="filter-box-item filter-rom">
+                            <div class="filter-text filter-rom-text">
+                                <h5>Theo Rom</h5>
+                            </div>
+                            <div class="filter-group filter-rom-group">
+                                <div class="filter-group-item rom-item"value="8">8GB</div>
+                                <div class="filter-group-item rom-item"value="16">16GB</div>
+                                <div class="filter-group-item rom-item"value="32">32GB</div>
+                                <div class="filter-group-item rom-item"value="64">64GB</div>
+                                <div class="filter-group-item rom-item"value="128">128GB</div>
+                                <div class="filter-group-item rom-item"value="256">256GB</div>
+                            </div>
+                        </div>
+                
+                        <div class="filter-box-item reset-all">
+                            <div class="btn-reset-all">Reset <i class="fas fa-undo-alt fa-fw"></i></div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-8 right">
+                    <div class="right__header">
+                        <h4 class="text-center">Sản phẩm</h4>
+                    </div>
+                    <div class="right__content">
+                        <div class="product__container">
+                            <div class="product__cart row" id="tablePhone">
+                                <!-- <div class="card" style="width: 15rem;">
+                                    <img style="width:100%; height:225px" class="card-img-top" id="img-SP" src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-silver-1-600x600.jpg
+                                    " alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-tittle" id="tenSP">Điện thoại Samsung Galaxy Z Fold3 5G 256GB
+                                        </h5>
+                                        <p id="priceSP" class="text-center">41990000
+                                        </p>
+                                        <a href="chiTiet.html">Xem Chi Tiết</a>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="noiDungChiTiet" class="CTSP_content" style="display: none;">
+            <div class="TTCT container">
+              <button class="btn btn-info" id="back">
+                Back
+              </button>
+              <h4>
+                <i class="fa-solid fa-circle-info"></i>
+                Thông tin chi tiết sản phẩm
+              </h4>
+            </div>
+            <div class="container content_SP">
+              <div class="row" id="pDetail">
+                <div class="col-4 left">
+                  <div class="product-detai-img">
+                    <img class="img-fluid" id="product-image" src="https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-silver-1-600x600.jpg
+                              " alt="">
+                  </div>
+                </div>
+                <div class="col-8 right">
+                  <div class="product-detail-content">
+                    <h3 id="product-name">Điện thoại Samsung Galaxy Z Fold3 5G 256GB </h3>
+                    <div class="row">
+                      <div class="col-2">
+                        <p id="product-ram">RAM:12GB</p>
+                      </div>
+                      <div class="col-2">
+                        <p id="product-rom">
+                          ROM:64GB
+                        </p>
+                      </div>
+                    </div>
+                    <h5 id="product-price">Giá: 41990000
+                    </h5>
+                    <h6>Mô tả:</h6>
+                    <div class="moTa">
+                      <p>Sản phẩm này được cung cấp và phân phối chính hãng bởi cửa hàng điện thoại DPHONE. Uy tín hàng đầu Việt
+                        Nam
+                      </p>
+                    </div>
+                  </div>
+          
+                  <div class="contact">
+                    <div class="dollar">
+                      <p>
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        Giá cả phải chăng, sản phẩm chất lượng
+                      </p>
+                    </div>
+                    <div class="truck">
+                      <p>
+                        <i class="fa-solid fa-truck-fast"></i>
+                        Giá cả phải chăng, sản phẩm chất lượng
+                    </div>
+                    </p>
+                    <div class="ring">
+                      <p>
+                        <i class="fa-solid fa-life-ring"></i>
+                        Giá cả phải chăng, sản phẩm chất lượng
+                      </p>
+                    </div>
+                  </div>
+                  <div class="Add">
+                    <ul class="row">
+                      <li>
+                        <button class="btn btn-alert">+</button>
+                      </li>
+                      <li>
+                        <p id="number_SP" href="">0</p>
+                      </li>
+                      <li>
+                        <button class="btn btn-alert">-</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="Buy">
+                    <button class="btn btn-warning">Mua ngay</button>
+                    <button class="btn btn-info">Thêm vào giỏ hàng</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/src/controller/lienket.js"></script>
+    <script src="./js/src/models/ValidationDN.js"></script>
+    <script src="../Admin/src/models/sanpham.js"></script>
+    <script src="../Admin/src/models/dssp.js"></script>
+    <!-- <script src="../Admin/src/controller/mainSP.js"></script> -->    <script src="./js/src/controller/index.js"></script>
+</body>
+
+</html>

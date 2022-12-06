@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My css -->
+    <link rel="stylesheet" href="./css/hanghoa.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">SGU-Phone</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Quản lý tài khoản</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href=" ./QuanLyHangHoa.html">Quản lý hàng hóa <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./LichSuGiaoDich.html">Lịch sử giao dịch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ThongBao.html">Thông báo</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__logo"></div>
+        </nav>
+    </header>
+    <section>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 mx-auto">
+                        <h3 class="display-4 text-center">Quản lý hàng hóa</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label for="">Tên sản phẩm:</label>
+                                <input type="text" class="form-control" id="tenSanPham">
+                                <div id="errorTenSP" style="display: none;" class="text-danger"></div>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label for="">Hãng</label>
+                                <select name="" id="hangSP" class="form-control">
+                                    <option value="">Chọn hãng</option>
+                                    <option value="SamSung">SamSung</option>
+                                    <option value="Xiaomi">Xiaomi</option>
+                                    <option value="Apple">Apple</option>
+                                    <option value="Realme">Realme</option>
+                                    <option value="Oppo">Oppo</option>
+                                    <option value="Nokia">Nokia</option>
+                                </select>
+                                <div id="errorHangSP" style="display: none;" class="text-danger"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label for="">Ram:</label>
+                                <select name="" id="RamSP" class="form-control">
+                                    <option value="">Chọn Ram</option>
+                                    <option value="2GB">2GB</option>
+                                    <option value="3GB">3GB</option>
+                                    <option value="4GB">4GB</option>
+                                    <option value="6GB">6GB</option>
+                                    <option value="8GB">8GB</option>
+                                    <option value="12GB">12GB</option>
+                                </select>
+                                <div id="errorRam" style="display:none;" class="text-danger"></div>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label for="">Rom:</label>
+                                <select name="" id="RomSP" class="form-control">
+                                    <option value="">Chọn Rom</option>
+                                    <option value="8GB">8GB</option>
+                                    <option value="16GB">16GB</option>
+                                    <option value="32GB">32GB</option>
+                                    <option value="64GB">64GB</option>
+                                    <option value="128GB">128GB</option>
+                                    <option value="256GB">256GB</option>
+                                </select>
+                                <div id="errorRom" style="display:none" class="text-danger"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label for="">Giá sản phẩm:</label>
+                                <input type="number" class="form-control" id="priceSP">
+                                <div id="errorPrice" style="display:none" class="text-danger"></div>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label for="">Hình ảnh sản phẩm:</label>
+                                <input type="text" class="form-control" id="imageSP">
+                                <div id="errorImage" style="display:none" class="text-danger"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Mô tả sản phẩm:</label>
+                                <input type="text" class="form-control" id="moTaSP">
+                                <div id="errorMoTa" style="display: none; " class="text-danger"></div>
+                            </div>
+                        </div>
+                        <div class="form-group text-center mt-4">
+                            <button id="btnAddSP" class="btn btn-success">Thêm Sản Phẩm</button>
+                            <button id="btnUpdateSP" style="display:none" class="btn btn-warning">Cập nhật sản phẩm</button>
+                            <button id="btnResetSP" class="btn btn-danger" style="display:none">Reset</button>
+                        </div>
+                    </div>
+                    <div class="col-6 mx-auto mb-4">
+                        <input 
+                            type="text"
+                            id="txtSearchSP"
+                            class="form-control"
+                            placeholder="Tìm kiếm sản phẩm"
+                        >
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Hình ảnh</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Hãng</th>
+                                <th>Ram</th>
+                                <th>Rom</th>
+                                <th>Giá</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodySanPham">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        <!-- MY JS -->
+        <script src="./src/models/sanpham.js"></script>
+        <script src="./src/models/dssp.js"></script>
+        <script src="./src/models/validationSP.js"></script>
+        <script src="./src/controller/mainSP.js"></script>
+</body>
+
+</html>

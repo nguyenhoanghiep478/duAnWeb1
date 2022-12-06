@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0;
+}
+
+header .navbar-nav li a:hover {
+  background-color: #007bff;
+}
+header .user {
+  margin-right: 30px;
+}
+header .user .login a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .login a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .login a i:hover {
+  background-color: #007bff;
+}
+header .user .shopping a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .shopping a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .shopping a i:hover {
+  background-color: #007bff;
+}
+
+section .wrap__tittle {
+  height: 30px;
+  text-align: center;
+  background-color: #cfe0f1;
+}
+section .content {
+  margin-top: 20px;
+}
+section .content h4 {
+  margin-top: 10px;
+}
+section .content .searchSP {
+  padding: 10px;
+}
+section .content .left {
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 620px;
+}
+section .content .row .search__input {
+  margin-left: 50px;
+}
+section .content .row .activities {
+  padding: 10px;
+}
+section .content .row .activities button {
+  margin-left: 10px;
+}
+section .content .RamSP .col .row .item {
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #007bff;
+  border-radius: 8px;
+  margin: 5px;
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1rem;
+}
+section .content .right {
+  padding: 20px;
+}
+section .content .right h5 {
+  font-size: 14px;
+}
+section .content .right .card {
+  display: block;
+  text-align: center;
+}
+section .content .right .card a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px 10px;
+  color: #fff;
+  background: #007bff;
+}
+section .content .right .card a:hover {
+  opacity: 0.5;
+}
+section .content .right .card #idProduct {
+  margin-bottom: 0;
+  margin-top: 20px;
+  color: #007bff;
+  font-weight: 800;
+}
+section .content .right .the_sp {
+  margin-bottom: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0;
+}
+
+header .navbar-nav li a:hover {
+  background-color: #007bff;
+}
+header .user {
+  margin-right: 30px;
+}
+header .user .login a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .login a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .login a i:hover {
+  background-color: #007bff;
+}
+header .user .settingAdmin a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .settingAdmin a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .settingAdmin a i:hover {
+  background-color: #007bff;
+}
+header .user .shopping a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .shopping a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .shopping a i:hover {
+  background-color: #007bff;
+}
+
+.TTCT {
+  margin-top: 20px;
+}
+.TTCT h4 {
+  color: #007bff;
+}
+
+.content_SP {
+  margin-top: 50px;
+}
+.content_SP .right .row .col-2 p {
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #007bff;
+  color: #007bff;
+  font-weight: 600;
+}
+.content_SP .right h5 {
+  color: #007bff;
+}
+.content_SP .right .dollar {
+  color: #007bff;
+}
+.content_SP .right .truck {
+  color: green;
+}
+.content_SP .right .ring {
+  color: red;
+}
+.content_SP .right .Add ul li {
+  list-style: none;
+}
+.content_SP .right .Add button {
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+}
+.content_SP .right .Add p {
+  display: inline-block;
+  padding: 15px;
+}
+
+.left .filter-box-item {
+  margin: 10px 0px;
+}
+.left .filter-name {
+  display: flex;
+}
+.left .search-bar {
+  width: 100%;
+}
+.left .search-bar input {
+  padding: 12px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline-color: #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.left .search-bar input::-moz-placeholder {
+  font-size: 14px;
+}
+.left .search-bar input:-ms-input-placeholder {
+  font-size: 14px;
+}
+.left .search-bar input::placeholder {
+  font-size: 14px;
+}
+.left .search-btn {
+  background-color: #007bff;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.left .search-btn:hover {
+  background-color: #0e4d91;
+}
+.left .filter-text {
+  font-size: 1.3rem;
+  margin: 5px;
+  color: #007bff;
+}
+.left .filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.left .filter-group-item {
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #007bff;
+  border-radius: 8px;
+  margin: 5px;
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 1rem;
+}
+.left .filter-group-item:hover {
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+.left .filter-group-item.active {
+  color: white;
+  background-color: #007bff;
+}
+.left .filter-price-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px 0px;
+}
+.left .price-item {
+  width: 47%;
+}
+.left .price-item input {
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline-color: #007bff;
+}
+.left .btn-reset-all {
+  text-align: center;
+  background-color: rgb(211, 77, 77);
+  width: 100px;
+  padding: 10px;
+  margin: 0 auto;
+  color: white;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+.left .btn-reset-all:hover {
+  background-color: rgb(197, 68, 68);
+}/*# sourceMappingURL=main.css.map */

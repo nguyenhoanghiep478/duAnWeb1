@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 0;
+}
+
+header {
+    .navbar-nav {
+
+        li {
+            a:hover {
+                background-color: #007bff;
+            }
+        }
+
+    }
+
+    .user {
+        margin-right: 30px;
+
+        .login {
+
+            // align-items: center;
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                i {
+                    padding: 10px;
+                    align-items: center;
+                    // display: block;
+                }
+
+                i:hover {
+                    background-color: #007bff;
+                }
+            }
+
+        }
+
+        .shopping {
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                i {
+                    padding: 10px;
+                    align-items: center;
+                }
+
+                i:hover {
+                    background-color: #007bff;
+                }
+            }
+        }
+    }
+}
+section{
+
+    a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .content-head-bg{
+        background-image: url('../image/contactus.gif');
+        background-size: cover;
+        width: 100%;
+        height: 900px;
+        position: relative;
+    }
+    
+    .contact-text{
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        color: white;
+        transform:  translateX(-50%);
+    }
+    
+    .contact-title{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+    
+    .contact-description{
+        font-style: italic;
+        font-size: 20px;
+    }
+    
+    .contact-btn{
+        background-color: white;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        /* color: white; */
+        transform:  translateX(-50%);
+        padding: 15px 30px;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        cursor: pointer;
+        user-select: none;
+        font-weight: bold;
+    }
+    
+    .contact-btn:hover{
+        opacity: 0.7;
+    }
+    
+    .contact-service{
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    .contact-service-item{
+        display: flex;
+     
+    }
+    
+    .contact-service-item>div{
+        margin: 5px 5px;
+        color: white;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    
+    .check-icon-online>i{
+        color: rgb(153, 209, 153);
+    }
+    
+    .check-icon-headset>i{
+        color: rgb(118, 198, 235);
+    }
+    
+    .check-icon-pro>i{
+        color: rgb(233, 196, 127);
+    }
+    
+    .contact-hotline{
+        position: absolute;
+        bottom: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+    }
+    
+    .contact-hotline>div{
+        margin: 10px 0px;
+        letter-spacing: 1px;
+    }
+    
+    .hotline-text{
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        /* border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 10px; */
+    }
+    
+    .hotline-text::before{
+        content:"";
+        border-bottom: 2px solid white;
+        position: absolute;
+        top: 50%;
+        right: -5%;
+        width: 100px;
+    }
+    
+    .hotline-text::after{
+        content:"";
+        position: absolute;
+        border-bottom: 2px solid white;
+        top: 50%;
+        left: -5%;
+        width: 100px;
+    }
+    
+    .contact-hotline-box{
+        display: flex;
+    }
+    
+    .contact-email,
+    .contact-phone{
+        font-size: 18px;
+    }
+    
+    .contact-phone-text,
+    .contact-email-text{
+        margin-left: 25px;
+    }
+    
+    /* SEND US A MESSAGE */
+    .content-action{
+        margin-top: 50px;
+    }
+    
+    .action-box-title{
+        text-align: center;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(28, 43, 75);
+        letter-spacing: 1px;
+    }
+    
+    .action-box{
+        margin-top: 50px;
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .action-box-left{
+        width: 30%;
+    
+    }
+    
+    .action-box-left img{
+        width: 600px;
+    }
+    
+    .action-box-right{
+        width: 30%;
+        /* background-color: rgb(28, 43, 75); */
+        color:  rgb(28, 43, 75);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        height: 500px;
+    }
+    
+    .wrap-box-mess{
+        padding: 20px;
+        /* width: 450px; */
+    }
+    
+    .mess-title{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .mess-input{
+        margin: 20px;
+    }
+    
+    .mess-input-data{
+        padding: 10px 40px;
+        width: 100%;
+        border-radius: 15px;
+        font-size: 18px;
+        outline-color: #007bff;
+        border: 1px solid rgb(194, 194, 194);
+    }
+    
+    .mess-send-to-us{
+        height: 150px;
+        padding: 15px;
+        font-family: roboto;
+    }
+    
+    .mess-btn-submit{
+        background-color: #007bff;
+        width: 150px;
+        padding: 15px;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 10px;
+        user-select: none;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .mess-btn-submit:hover{
+        opacity: 0.7;
+    }
+    
+    .icon{
+        position: absolute;
+        padding: 12px 15px;
+        min-width: 40px;
+    }
+    
+}

@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0;
+}
+
+header .navbar-nav li a:hover {
+  background-color: #007bff;
+}
+header .user {
+  margin-right: 30px;
+}
+header .user .login a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .login a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .login a i:hover {
+  background-color: #007bff;
+}
+header .user .shopping a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .shopping a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .shopping a i:hover {
+  background-color: #007bff;
+}
+
+/* .footer{
+    margin-top:0;
+} */
+.viewHome a {
+  text-decoration: none;
+}
+
+.content-wrapper {
+  height: 450px;
+  padding-top: 50px;
+  background-image: url(../image/contactus.gif);
+  background-size: cover;
+}
+
+.heading-title {
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.heading-description {
+  text-align: center;
+  margin: 10px;
+  font-style: italic;
+  color: white;
+}
+
+.heading-picture-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  position: absolute;
+  z-index: 8;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.phone-img2 {
+  width: 400px;
+  height: auto;
+}
+
+.phone-img {
+  position: relative;
+  -webkit-animation: fly-up 2s ease-in-out infinite alternate;
+          animation: fly-up 2s ease-in-out infinite alternate;
+}
+
+/* .phone-img2:hover{
+
+    animation: fly-up 1.5s ease-in-out infinite alternate;
+} */
+@-webkit-keyframes fly-up {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -25px;
+  }
+}
+@keyframes fly-up {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -25px;
+  }
+}
+.phone-picture-item {
+  margin: 0 -20px;
+}
+
+.content-wrapper {
+  z-index: 3;
+}
+
+.detail-warper {
+  /* background-image: url(../img/3.jpg);
+  background-size: cover; */
+  background-color: #007bff;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  /* margin-top:-250px; */
+  z-index: 1;
+}
+
+.detail-product-info {
+  position: absolute;
+  top: 55%;
+  text-align: center;
+  line-height: 24px;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  font-size: 17px;
+}
+
+.detail-product {
+  margin: 0 60px;
+  width: 200px;
+}
+
+.detail-product-1 {
+  top: 35%;
+}
+
+.detail-product-2 {
+  top: 40%;
+}
+
+.detail-product-3 {
+  top: 35%;
+}
+
+.detail-product-name {
+  font-weight: bold;
+}
+
+.viewHome {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: #007bff;
+  text-align: center;
+  padding: 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.viewHome:hover {
+  background-color: rgb(5, 26, 119);
+  color: white;
+  /* border: 1px solid white;
+  background-color: var(--main-color); */
+}
+
+.viewHome:before {
+  content: "";
+  border-bottom: 3px solid white;
+  width: 250px;
+  /* height: 3px; */
+  top: -40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ABOUT PRODUCT */
+.about-product {
+  margin: 20px 100px;
+}
+
+.about__container {
+  margin-top: 80px;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__content__left {
+  width: 55%;
+}
+
+.title__content__text__1 {
+  color: #007bff;
+}
+
+.title__content__text__2 {
+  margin-top: 20px;
+}
+
+.about__content__left__check {
+  margin-top: 20px;
+}
+
+.about__content__left__check__item {
+  display: flex;
+  align-items: center;
+}
+
+.about__content__left__check__item > div {
+  margin: 8px 10px;
+}
+
+.about__content__left__check__icon {
+  background-color: rgb(139, 141, 140);
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.about__content__left__check__icon__xiaomi {
+  background-color: rgb(135, 187, 235);
+}
+
+.about__content__left__check__icon__apple {
+  background-color: rebeccapurple;
+}
+
+.about__content__right {
+  width: 35%;
+}
+
+.about__content__right__img img {
+  width: 400px;
+  position: relative;
+  -webkit-animation: fly-up2 3s infinite ease-in-out alternate;
+          animation: fly-up2 3s infinite ease-in-out alternate;
+}
+
+@-webkit-keyframes fly-up2 {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 10px;
+  }
+}
+
+@keyframes fly-up2 {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 10px;
+  }
+}/*# sourceMappingURL=gioiThieu.css.map */

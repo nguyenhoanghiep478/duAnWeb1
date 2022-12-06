@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0;
+}
+
+header .navbar-nav li a:hover {
+  background-color: #007bff;
+}
+header .user {
+  margin-right: 30px;
+}
+header .user .login a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .login a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .login a i:hover {
+  background-color: #007bff;
+}
+header .user .settingAdmin a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .settingAdmin a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .settingAdmin a i:hover {
+  background-color: #007bff;
+}
+header .user .shopping a {
+  text-decoration: none;
+  color: #fff;
+}
+header .user .shopping a i {
+  padding: 10px;
+  align-items: center;
+}
+header .user .shopping a i:hover {
+  background-color: #007bff;
+}
+
+body {
+  background: #009EFF;
+}
+
+.content {
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-top: 140px;
+  background-color: #fff;
+  opacity: 1;
+}
+.content .DangNhap {
+  text-align: center;
+}
+.content input {
+  height: 40px;
+  margin-left: 50px;
+  width: 600px;
+}
+.content .DN, .content .MK {
+  padding-left: 200px;
+  padding-right: 100px;
+}
+.content h3 {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+.content .DangKi {
+  margin-top: 40px;
+}
+.content .btnDangNhap {
+  margin-top: 20px;
+}
+.content .btnDNLogin {
+  margin-top: 20px;
+  font-weight: 600;
+}/*# sourceMappingURL=login.css.map */

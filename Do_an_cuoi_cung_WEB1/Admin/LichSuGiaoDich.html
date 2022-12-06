@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- My css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="../Main/main.html">SGU-Phone</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Quản lý tài khoản</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./QuanLyHangHoa.html">Quản lý hàng hóa</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./LichSuGiaoDich.html"> Lịch sử giao dịch<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ThongBao.html">Thông báo</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__logo"></div>
+        </nav>
+    </header>
+    <section>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 mx-auto">
+                        <h3 class="display-4 text-center">Lịch sử đơn hàng</h3>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label for="">Mã đơn hàng:</label>
+                                <input type="text" class="form-control" id="MaDH">
+                                <div id="errorMaDH" style="display:none;" class="text-danger"></div>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label for="">Tài khoản mua:</label>
+                                <input type="text" class="form-control" id="taiKhoanMua">
+                                <div id="errorTaiKhoanMua" style="display:none;" class="text-danger"></div>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label for="">Số Điện Thoại</label>
+                                <input type="text" class="form-control" id="soDT">
+                                <div id="errorSoDT" style="display:none;" class="text-danger"></div>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label for="">Tổng bill</label>
+                                <input type="text" class="form-control" id="bill">
+                                <div id="errorBill" style="display:none;" class="text-danger"></div>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label for="">Ngày mua</label>
+                                <input type="date" class="form-control" id="Day">
+                                <div id="errorDay" style="display:none;" class="text-danger"></div>
+                            </div>
+                            <div class="col-6 form-group">
+                                <label for="">Trạng thái</label>
+                                <select name="" id="trangThai" class="form-control">
+                                    <option value="">Chọn trạng thái</option>
+                                    <option value="SamSung">Đã xử lý</option>
+                                    <option value="SamSung">Chưa xử lý</option>
+                                </select>
+                                <div id="errorHangSP" style="display: none;" class="text-danger"></div>
+                            </div>
+                        </div>
+                        <div class="form-group text-center">
+                            <button id="btnAdd" class="btn btn-success">Thêm Tài Khoản</button>
+                            <button id="btnUpdate" style="display:none" class="btn btn-warning">Cập nhật</button>
+                            <button id="btnReset" class="btn btn-danger" style="display:none">Reset</button>
+                        </div>
+                    </div>
+                    <div class="col-8 mx-auto">
+                        <input 
+                            id="txtSearch"
+                            type="text"
+                            class="form-control"
+                            placeholder="search"
+                        >
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Mã Đơn Hàng</th>
+                                    <th>Tài khoản</th>
+                                    <th>Số điện thoại</th>
+                                    <th>Ngày Mua</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyTaiKhoan">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

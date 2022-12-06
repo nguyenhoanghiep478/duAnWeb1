@@ -1,0 +1,4 @@
+1> Button RESET ADMIN
+	- Không thể reset value trong ô input
+
+2> Kéo to ô mô tả của quản lý hàng hóa
