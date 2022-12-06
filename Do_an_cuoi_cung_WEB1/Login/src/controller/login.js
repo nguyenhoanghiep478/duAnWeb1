@@ -1,3 +1,4 @@
+
 function getEle(id) {
     return document.getElementById(id);
 }
@@ -36,11 +37,17 @@ getEle('btnDangNhap').addEventListener("click", function () {
         getEle('txtDN').value = "";
         getEle('txtDK').value = "";
         admin = true;
+        let adminData={
+            taiKhoan: taiKhoan,
+            matKhau: matKhau,
+        }
+        localStorage.setItem('userLogin',JSON.stringify(adminData));
+        window.location="../Main/main.html";
         return null;
     } else {
         getEle('AD').style.display = "none";
         admin = false;
-
+        
     }
     isValid = true;
 
@@ -59,6 +66,11 @@ getEle('btnDangNhap').addEventListener("click", function () {
         getEle('errorBtnDangNhap').innerHTML = "Đăng nhập không thành công";
         dangNhapThanhCong = false;
     }
+    getLocalStorage();
+    if(localStorage.getItem('userLogin')==null){
+        localStorage.setItem('userLogin',JSON.stringify(dstk.arr[dstk.arr.findIndex(x=>x.taikhoan==taiKhoan)]));
+    }
+    window.location="../Main/main.html";
     // if (isValid === false) {
     //     console.log(isValid);
     // } else {

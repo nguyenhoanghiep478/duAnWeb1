@@ -57,6 +57,22 @@ header {
                 }
             }
         }
+        .LogOut {
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                i {
+                    padding: 10px;
+                    align-items: center;
+                }
+
+                i:hover {
+                    cursor: pointer;
+                    background-color: #007bff;
+                }
+            }
+        }
     }
 }
 
